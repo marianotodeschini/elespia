@@ -19,19 +19,21 @@
     <h4> Agregar jugadores</h4>
     <div class="contenedor-agregar">
        
-        <input type="text" placeholder="Nombre del Jugador">
-        <button  type="submit" class ="boton-agregar"> Agregar </button>
+        <input type="text"  id="nuevoJugador" placeholder="Nombre del Jugador">
+        <button  onclick=agregarDato() class ="boton-agregar"> Agregar </button>
    </div> 
-   <div class="lista-jugadores">
-    <form class="jugadores-agregados">
+   <div id= "lista" class="lista-jugadores">
+    <form >
+        <div class="jugadores-agregados">
+            <ul id="listaJugador"></ul>
     <!--- Aca van los jugadores agregados-->
-    <a href="./categorias.html"> Jugar </a>
-    <button type=""> Jugar!</button>
+   
+    <button class="btn-jugar">  <a href="./categorias.html"> Jugar!</a></button>
    
    </form>
    </div>
 </div>
-
+<script src="main.js"></script>
 </body>
-<footer> Creado con ♥ por Mariano Todeschini @2023 </footer>
+
 </html>

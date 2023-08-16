@@ -9,6 +9,7 @@
     width: 80px;
 }
 
+
 body{
     background-color: black;
     display: flex;
@@ -17,9 +18,8 @@ body{
     flex-direction: column;
 }
 .contenedor-principal{
-    width: 300px;
+    width: 40%;
     height: 550px;
-    padding: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,14 +39,112 @@ button{
 
 }
 
-.contenedor-categorias{
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-      ". . ."
-      ". . ."
-      ". . ."; 
+input{
+    color:black;
+}
 
+
+
+.contenedor-agregar{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+form{
+    margin: 30px;
+}
+.jugadores-agregados{
+ border: solid white 0.5px;
+ border-radius: 10px;
+ width: 200px;
+ height: 200px;
+ padding: 10px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ background: rgb(247,247,247);
+background: linear-gradient(90deg, rgba(247,247,247,0.38139005602240894) 0%, rgba(113,113,130,0.31416316526610644) 100%);
+}
+
+li {
+    color:violet;
+    font-size: 15px;
+    padding: 5px;
+    display: flex;
+    width: 100px;
+    list-style: none;
+   
+};
+
+ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.btn.jugar{
+    padding: 110px;
+}
+.grid-container {
+    display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
+  gap: 5px 5px; 
+  grid-template-areas: 
+    ". ."
+    ". ."
+    ". ."; 
+}
+
+.card {
+    border: 1px solid darkblue;
+    border-radius: 20%;
+    padding: 20px;
+    margin: 5px;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.img-categorias{
+    width: 40%;
+}
+
+.cabecera-categorias{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.comienza-juego{
+    animation: animate__backInDown;
+}
+
+.arrancamos{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

@@ -11,29 +11,42 @@
     <!--- Contenedor principal inicio al juego  -->
 
 <div id="" class="contenedor-principal">
-
-        <a href="index.html" ><div class="cabecera">
+   <div class="cabecera-categorias"> <a href="index.html" >
         <img src="./espiar(1).png" class="logo">
         <h3> El espia!</h3>
     </a>
+   </div>
+    <h4>Selecciona una categoria:</h4>
+
+    <seccion class="grid-container">
+        <div class="card">
+            <img class="img-categorias" src="pintor.png">
+            <a href="comienza.html" onclick="guardarCategoria()" id="categoria"><figcaption>Oficios</figcaption></a>
+        </div>
+        <!-- Repite los siguientes bloques para cada categoría -->
+        <div class="card">
+            <img class="img-categorias" src="diamante.png">
+            <a href="comienza.html" onclick="guardarCategoria()" id="categoria"><figcaption>Objetos</figcaption></a>
+        </div>
+        <div class="card">
+            <img class="img-categorias" src="harry-potter.png">
+            <a href="comienza.html" onclick="guardarCategoria()" id="categoria"><figcaption>Personajes</figcaption></a>
+        </div>
+        <div class="card">
+            <img class="img-categorias" src="cantante.png">
+            <a href="comienza.html" onclick="guardarCategoria()" id="categoria"><figcaption>Cantantes</figcaption></a>
+        </div>
+        <div class="card">
+            <img class="img-categorias" src="pin-de-ubicacion.png" >
+            <a href="comienza.html" onclick="guardarCategoria()" id="categoria"><figcaption>Lugares</figcaption></a>
+        </div>
     
-</div> 
-    <div class="contenedor-todas-categorias">
-
-       <div class="contenedor-categorias">
-       
-        <div class="categorias"><a href="comienza.html">Oficios</a></div>
-       <div class="categorias"><a href="comienza.html">Personajes </a></div>
-       <div class="categorias"><a href="comienza.html">Objetos</a></div>
-       <div class="categorias"><a href="comienza.html">Cantantes</a></div>
-       <div class="categorias"><a href="comienza.html">Lugares</a></div>
-
-    </div> 
-
-</div>
-
+    
+    </seccion>
+    
 </div>
 
 </body>
-<footer> Creado con ♥ por Mariano Todeschini @2023 </footer>
+<script src="main.js"></script>
+
 </html>
