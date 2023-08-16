@@ -18,7 +18,7 @@ body{
     flex-direction: column;
 }
 .contenedor-principal{
-    width: 40%;
+    width: 80%;
     height: 550px;
     display: flex;
     justify-content: center;

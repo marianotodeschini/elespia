@@ -291,9 +291,13 @@ const contenedorPrincipal = document.getElementsByClassName('contenedor-principa
 const nuevoDiv = document.createElement('div');
 contenedorPrincipal.appendChild(nuevoDiv);
 
+const numeroIndicador = Math.floor(Math.random() *10);
+categoriaSeleccionada = informacionCategorias.cantantes[numeroIndicador];
+
+
 const mostrarRol = `<h1> Eres</h1>
-<h3> ${informacionCategorias.cantantes[4].nombre}</h3>
-<p> ${informacionCategorias.cantantes[4].descripcion}</p>
+<h3> ${categoriaSeleccionada.nombre}</h3>
+<p> ${categoriaSeleccionada.descripcion}</p>
 <button onclick="siguienteJugador()">Siguiente Jugador</button>
 `;
 
